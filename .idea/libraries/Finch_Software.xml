@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Finch Software">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/FinchJava/Finch Software" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/FinchJava/Finch Software/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/FinchJava/Finch Software/SourceFiles" />
+    </SOURCES>
+  </library>
+</component>
