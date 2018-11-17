@@ -18,18 +18,17 @@ public class Main extends Application {
   }
 
   private static void handleKeyInput(KeyEvent keyEvent) {
-    if (keyEvent.getCode() == KeyCode.UP) {
-      finch.setWheelVelocities(velocity, velocity);
-    } else if (keyEvent.getCode() == KeyCode.DOWN) {
-      finch.setWheelVelocities(-velocity, -velocity);
-    } else if (keyEvent.getCode() == KeyCode.RIGHT) {
-      finch.setWheelVelocities(velocity, -velocity);
-    } else if (keyEvent.getCode() == KeyCode.LEFT) {
-      finch.setWheelVelocities(-velocity, velocity);
-    } else {
-      finch.setWheelVelocities(0, 0);
-    }
+    KeyCode keyCode = keyEvent.getCode();
 
+    if (keyCode == KeyCode.UP || keyCode == KeyCode.W) {
+      finch.setWheelVelocities(velocity, velocity);
+    } else if (keyCode == KeyCode.DOWN || keyCode == KeyCode.S) {
+      finch.setWheelVelocities(-velocity, -velocity);
+    } else if (keyCode == KeyCode.RIGHT || keyCode == KeyCode.D) {
+      finch.setWheelVelocities(velocity, -velocity);
+    } else if (keyCode == KeyCode.LEFT || keyCode == KeyCode.A) {
+      finch.setWheelVelocities(-velocity, velocity);
+    }
   }
 
   @Override
